@@ -138,7 +138,12 @@
         // Implementar una función "palabraInvertida" que devuelva la palabra invertida
         // ejemplo: palabraInvertida("hola") retorna "aloh";
 
-        
+        function palabraInvertida(palabra) {
+            let palabraArray = palabra.split("");
+            palabraArray.reverse();
+            palabra = palabraArray.join('');
+            return palabra;
+        }
         
         mostrarResultado("palabraInvertida(\"hola\"): ", palabraInvertida("hola"))
         
