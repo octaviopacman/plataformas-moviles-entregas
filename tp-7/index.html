@@ -7,6 +7,12 @@
 </head>
 <body>
     <script type="text/javascript">
+
+        function mostrarResultado(string1, string2)
+        {
+            console.log(string1, string2);
+            document.write(string1, string2, "<br></br>")
+        }
         // Numeros
         
         // Implementar una función "suma" que retorne la suma de 2 numeros
@@ -16,7 +22,7 @@
             return num1 + num2;
         }
         
-        console.log("suma(2,3): ", suma(2,3))
+        mostrarResultado("suma(2,3): ", suma(2,3))
         
         
         // Implementar una función "elevarAlCubo" que eleve al cubo un numero
@@ -27,7 +33,7 @@
             return total;
         }
         
-        console.log("elevarAlCubo(3): ", elevarAlCubo(3))
+        mostrarResultado("elevarAlCubo(3): ", elevarAlCubo(3))
         
         // Implementar una función "restoDivisionEntera" para devolver el resto de una división entera entre un dividendo y un divisor
         // ejemplo: restoDivisionEntera(3,2) retorna 1
@@ -37,7 +43,7 @@
             return parseInt(resto);
         }
         
-        console.log("restoDivisionEntera(3,2): ", restoDivisionEntera(3,2))
+        mostrarResultado("restoDivisionEntera(3,2): ", restoDivisionEntera(3,2))
         
         
         // Implementar una función "numeroPi" para devolver el numero PI
@@ -47,7 +53,7 @@
             return pi;
         }
         
-        console.log("numeroPi(): ", numeroPi())
+        mostrarResultado("numeroPi(): ", numeroPi())
         
         
         // Implementar una función "numeroRandom" para devolver un número random / aleatorio
@@ -57,7 +63,7 @@
             return Math.random();
         }
         
-        console.log("numeroRandom(): ", numeroRandom())
+        mostrarResultado("numeroRandom(): ", numeroRandom())
         
         
         // Implementar una función "mejorNumeroRandom" para devolver un número random entre 2 valores recibidos como parámetros
@@ -67,7 +73,7 @@
             return Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
         }
         
-        console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6))
+        mostrarResultado("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6))
         
         
         // Cadenas de Caracteres
@@ -79,7 +85,7 @@
             return palabra.toUpperCase();
         }
 
-        console.log("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayuscula("Plataformas Móviles"))
+        mostrarResultado("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayuscula("Plataformas Móviles"))
         
         
         // Implementar una función "primeraLetra" que nos devuelva la inicial de la palabra recibida como parámetro
@@ -89,7 +95,7 @@
             return palabra.charAt(0);
         }
         
-        console.log("primeraLetra(\"Plataformas\"): ", primeraLetra("Plataformas"))
+        mostrarResultado("primeraLetra(\"Plataformas\"): ", primeraLetra("Plataformas"))
         
         
         // Implementar una función "ultimaLetra" que nos devuelva la letra final la palabra recibida como parámetro
@@ -99,7 +105,7 @@
             return palabra.charAt(palabra.length - 1);
         }
         
-        console.log("ultimaLetra(\"Plataformas\"): ", ultimaLetra("Plataformas"))
+        mostrarResultado("ultimaLetra(\"Plataformas\"): ", ultimaLetra("Plataformas"))
         
         
         // Implementar una función "primeraLetraMayuscula" que devuelve la palabra original con su primera letra en mayúscula
@@ -109,7 +115,7 @@
             return palabra.charAt(0).toUpperCase() + palabra.slice(1);
         }
         
-        console.log("primeraLetraMayuscula(\"plataformas\"): ", primeraLetraMayuscula("plataformas"))
+        mostrarResultado("primeraLetraMayuscula(\"plataformas\"): ", primeraLetraMayuscula("plataformas"))
         
         // Implementar una función "palabraAListaDeLetras" que dada una palabra me retorne un listado de sus letras
         // ejemplo: palabraAListaDeLetras("hola") retorna ['h', 'o', 'l', 'a'];
@@ -118,7 +124,7 @@
             return palabra.split('');
         }
         
-        console.log("palabraAListaDeLetras(\"hola\"): ", palabraAListaDeLetras("hola"))
+        mostrarResultado("palabraAListaDeLetras(\"hola\"): ", palabraAListaDeLetras("hola"))
         
         // Implementar una función "listaDeLetrasAPalabra" que dado un listado de letras, devuelva una palabra
         // ejemplo: listadoDeLetrasAPalabra(["h", "o", "l", "a"]) retorna "hola";
@@ -127,16 +133,14 @@
             return palabra.join("");	
         }
         
-        console.log("listadoDeLetrasAPalabra([\"h\", \"o\", \"l\", \"a\"]): ", listadoDeLetrasAPalabra(["h", "o", "l", "a"]))
+        mostrarResultado("listadoDeLetrasAPalabra([\"h\", \"o\", \"l\", \"a\"]): ", listadoDeLetrasAPalabra(["h", "o", "l", "a"]))
         
         // Implementar una función "palabraInvertida" que devuelva la palabra invertida
         // ejemplo: palabraInvertida("hola") retorna "aloh";
 
-        function palabraInvertida(palabra) {
-            return palabra.split('').reverse().join('');
-        }
         
-        console.log("palabraInvertida(\"hola\"): ", palabraInvertida("hola"))
+        
+        mostrarResultado("palabraInvertida(\"hola\"): ", palabraInvertida("hola"))
         
         </script>
         
