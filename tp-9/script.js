@@ -1,3 +1,11 @@
+var personaEjemplo = {
+    "apellido": "Perez",
+    "nombre": "Juan",
+    "edad": 20,
+    "documento": 12345
+};
+
+
 /* Cree un objeto con el nombre Persona . */
 function crearPersona(nombre, apellido, edad, documento) {
     return {
